@@ -1,0 +1,27 @@
+type Document {
+  m_szDocID: ID!
+  m_szDocTitle: String!
+  m_szYear: Int!
+  m_szDocSumamry: String!
+  m_szDocBody: String!
+  m_szGeo1: String!
+  m_szSourceType: String!
+  m_szSrcUrl: String
+  m_Places: [String]
+  m_People: [String]
+  m_Companies: [String]
+  m_BiGrams: [String]
+  m_TriGrams: [String]
+  m_SocialTags: [String]
+  m_Topics: [String]
+  m_Industry: [String]
+  m_Technology: [String]
+  m_BiCnt: [Int]
+  m_TriCnt: [Int]
+  m_iDocBodyWordCnt: Int!
+}
+
+type Query {
+  documents(offset: Int, limit: Int): [Document]!
+  document: Document
+}

@@ -1,0 +1,9 @@
+api/node_modules
+.webpack
+.sam/output.yml
+
+api/source/data/documents.json
+
+ui/node_modules
+.webpack
+.sam/output.yml
